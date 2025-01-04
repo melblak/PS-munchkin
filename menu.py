@@ -1,5 +1,6 @@
 import pygame
 
+
 class Menu:
     def __init__(self):
         # Initialize Pygame
@@ -12,7 +13,7 @@ class Menu:
         self.screen.blit(background, (0, 0))
 
         # Load assets
-        self.play_button = pygame.image.load("assets/assets_menu/botao_jogar.png")
+        self.play_button = pygame.image.load("assets/assets_menu/botao_jogar_local.png")
         self.quit_button = pygame.image.load("assets/assets_menu/botao_sair.png")
 
         # Set button positions
@@ -41,8 +42,3 @@ class Menu:
 
             # Update the display
             pygame.display.flip()
-
-        # Quit the game
-        pygame.quit()
-
-
