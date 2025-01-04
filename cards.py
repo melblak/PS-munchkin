@@ -137,9 +137,9 @@ titulo_realmente_impressionante = Equipment(
     name="Título Realmente Impressionante",
     description=None,
     strength=3,
-    )
+)
 
-tubo_de_cola= Treasure(
+tubo_de_cola = Treasure(
     name="Tubo de Cola",
     description="Use quando alguém fugir de um combate com sucesso de qualquer forma. O jogador precisará rolar o dado novamente para fugir(Mesmo se tiver sido automático da primeira vez). Consumível.",
     strength=None,
@@ -161,4 +161,167 @@ florete_da_injustica = Equipment(
     strength=3,
     body_part=BodyPart.HAND,
     value=600,
+)
+
+joelheiras_pontiagudas = Equipment(
+    name="Joelheiras Pontiagudas",
+    description=None,
+    strength=1,
+    value=200,
+)
+
+escudo_onipresente = Equipment(
+    name="Escudo Onipresente",
+    description="Só para Guerreiros",
+    strength=4,
+    body_part=BodyPart.HAND,
+    is_big=True,
+    value=600,
+)
+
+elmo_chifrudo = Equipment(
+    name="Elmo Chifrudo",
+    description=None,
+    strength=1,
+    body_part=BodyPart.HEAD,
+    special_effect="+3 se usado por um Elfo",
+    value=600,
+)
+
+cocao_de_ponfusao = Treasure(
+    name="Poção de Ponfusão",
+    description="Use durante o combate. +3 para qualquer um dos lados. Consumível.",
+    strength=3,
+    special_effect=None,
+    value=300,
+)
+
+armadura_rechonchuda = Equipment(
+    name="Armadura Rechonchuda",
+    description="Só para Anões",
+    strength=3,
+    body_part=BodyPart.CHEST,
+    value=400,
+)
+
+mutilar_os_corpos = Treasure(
+    name="Mutilar os Corpos",
+    description="Use após o combate. Suba um nível. Consumível.",
+)
+
+pocao_de_polimorfia = Treasure(
+    name="Poção de Polimorfia",
+    description="Use durante o combate. Transforme um monstro em um papagaio que voa deixando seus Tesouros. Consumível.",
+    value=1300,
+)
+
+ferver_um_formigueiro = Treasure(
+    name="Ferver um Formigueiro",
+    description="Suba um nível.",
+)
+
+armadura_de_couro = Equipment(
+    name="Armadura de Couro",
+    description=None,
+    strength=1,
+    body_part=BodyPart.CHEST,
+    value=200,
+)
+
+dado_viciado = Treasure(
+    name="Dado Viciado",
+    description="Jogue após rolar o dado, por qualquer motivo. Vire a face de sua escola para cima. Consumível.",
+    value=300,
+)
+
+martelo_detona_joelho = Equipment(
+    name="Martelo Detona Joelho",
+    description="Só para Anões.",
+    strength=4,
+    body_part=BodyPart.HAND,
+    value=600,
+)
+
+subornar_o_mestre_com_comida = Treasure(
+    name="Subornar o Mestre com Comida",
+    description="Suba um nível.",
+)
+
+roube_um_nivel = Treasure(
+    name="Roube um Nível",
+    description="Roube um nível de outro jogador. Consumível.",
+)
+
+maca_do_cavaleiro = Equipment(
+    name="Maça do Cavaleiro",
+    description="Só para Homens.",
+    strength=4,
+    body_part=BodyPart.HAND,
+    value=400,
+)
+
+mil_pecas_de_ouro = Treasure(
+    name="1000 Peças de Ouro",
+    description="Suba um nível.",
+)
+
+pocao_eletrica_radioativa = Treasure(
+    name="Poção Elétrica Radioativa",
+    description="Use durante o combate. +5 para qualquer um dos lados. Consumível.",
+    strength=5,
+    special_effect=None,
+    value=200,
+)
+
+doppleganger = Treasure(
+    name="Doppleganger",
+    description="Use durante o combate. Invoca uma cópia exata do jogador, dobrando sua força. Você só pode usar a carta se for o único jogador em combate. Consumível.",
+    strength=None,
+    special_effect=None,
+    value=300,
+)
+
+escada = Equipment(
+    name="Escada",
+    description="Só para Halflings.",
+    strength=3,
+    is_big=True,
+    value=400,
+)
+
+armadura_de_mithril = Equipment(
+    name="Armadura de Mithril",
+    description="Não pode ser usada por magos.",
+    strength=3,
+    body_part=BodyPart.CHEST,
+    is_big=True,
+    value=600,
+)
+
+pedra_gigante = Equipment(
+    name="Pedra Gigante",
+    description=None,
+    strength=3,
+    body_part=BodyPart.HAND,
+    is_big=True,
+)
+
+hamburguer_de_anchovas = Equipment(
+    name="Hamburguer de Anchovas",
+    description="Só para Halflings.",
+    strength=3,
+    value=400,
+)
+
+pocao_do_sono = Treasure(
+    name="Poção do Sono",
+    description="Use durante o combate. +2 para qualquer um dos lados. Consumível.",
+    strength=2,
+    special_effect=None,
+    value=100,
+)
+
+erro_conveniente_de_adicao = Treasure(
+    name="Erro Conveniente de Adição",
+    description="Suba um nível.",
 )

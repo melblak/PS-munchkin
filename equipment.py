@@ -9,9 +9,9 @@ class BodyPart(Enum):
     HAND = "HAND"
     CHEST = "CHEST"
     FEET = "FEET"
-    
-class ItemType(Enum):
-    ...
+
+
+class ItemType(Enum): ...
 
 
 class Equipment(Treasure):
@@ -24,7 +24,7 @@ class Equipment(Treasure):
         is_big: bool = False,
         is_two_hands: bool = False,
         body_part: Optional[BodyPart] = None,
-        value = None,
+        value=None,
     ):
         super().__init__(name, description, strength, item_type, value)
         self.is_big = is_big
