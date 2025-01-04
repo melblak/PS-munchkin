@@ -1,4 +1,4 @@
-from menu import Menu
+from screens.menu import Menu
 
 
 def main():
