@@ -11,6 +11,9 @@ class BodyPart(Enum):
     FEET = "FEET"
 
 
+class ItemType(Enum): ...
+
+
 class Equipment(Treasure):
     def __init__(
         self,
@@ -21,11 +24,13 @@ class Equipment(Treasure):
         is_big: bool = False,
         is_two_hands: bool = False,
         body_part: Optional[BodyPart] = None,
+        value=None,
     ):
-        super().__init__(name, description, strength, item_type)
+        super().__init__(name, description, strength, item_type, value)
         self.is_big = is_big
         self.is_two_hands = is_two_hands
         self.body_part = body_part
+        self.value = value
 
     def equip(self, player):
         """
