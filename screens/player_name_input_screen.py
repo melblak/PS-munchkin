@@ -2,8 +2,10 @@ import sys
 
 import pygame
 
-from constants import BACKGROUND_IMAGE
-from text_button import TextButton
+from constants import MENU_BACKGROUND_IMAGE
+from models.player.player import Player
+from screens.munchkin import Munchkin
+from components.text_button import TextButton
 
 
 class PlayerNameInputScreen:
@@ -41,11 +43,14 @@ class PlayerNameInputScreen:
                     sys.exit()
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
-
                     for i, rect in enumerate(self.input_boxes_rects):
                         if rect.collidepoint(event.pos):
                             self.focused_input_box = i
                             break
+                    if self.confirm_button.rect.collidepoint(event.pos):
+                        players = [Player(name=i) for i in self.players_names]
+                        munchkin = Munchkin(screen=self.screen, players=players)
+                        munchkin.run()
 
                 if event.type == pygame.KEYDOWN:
                     if hasattr(self, "focused_input_box"):
@@ -65,7 +70,7 @@ class PlayerNameInputScreen:
                             pygame.quit()
                             sys.exit()
 
-            self.screen.blit(BACKGROUND_IMAGE, (0, 0))
+            self.screen.blit(MENU_BACKGROUND_IMAGE, (0, 0))
 
             for i in range(self.num_players):
                 label_x = 460

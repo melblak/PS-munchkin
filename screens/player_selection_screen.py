@@ -2,9 +2,9 @@ import sys
 
 import pygame
 
-from constants import BACKGROUND_IMAGE, ARROW_UP, ARROW_DOWN
+from constants import MENU_BACKGROUND_IMAGE, ARROW_UP, ARROW_DOWN
 from screens.player_name_input_screen import PlayerNameInputScreen
-from text_button import TextButton
+from components.text_button import TextButton
 
 
 class PlayerSelectionScreen:
@@ -13,7 +13,7 @@ class PlayerSelectionScreen:
         self.font = pygame.font.Font(None, 74)
         self.button_font = pygame.font.Font(None, 48)
 
-        self.screen.blit(BACKGROUND_IMAGE, (0, 0))
+        self.screen.blit(MENU_BACKGROUND_IMAGE, (0, 0))
 
         self.num_players = 3
         self.min_players = 3
@@ -55,7 +55,7 @@ class PlayerSelectionScreen:
                         )
                         name_input_screen.run()
 
-            self.screen.blit(BACKGROUND_IMAGE, (0, 0))
+            self.screen.blit(MENU_BACKGROUND_IMAGE, (0, 0))
 
             self.screen.blit(self.title_text, self.title_rect)
 

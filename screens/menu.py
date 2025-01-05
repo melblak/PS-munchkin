@@ -1,4 +1,4 @@
-from constants import PLAY_BUTTON, QUIT_BUTTON, BACKGROUND_IMAGE
+from constants import PLAY_BUTTON, QUIT_BUTTON, MENU_BACKGROUND_IMAGE
 
 import pygame
 
@@ -10,7 +10,7 @@ class Menu:
         pygame.init()
 
         self.screen = pygame.display.set_mode((1920, 1080))
-        self.screen.blit(BACKGROUND_IMAGE, (0, 0))
+        self.screen.blit(MENU_BACKGROUND_IMAGE, (0, 0))
 
         self.play_button_rect = PLAY_BUTTON.get_rect(center=(320, 200))
         self.quit_button_rect = QUIT_BUTTON.get_rect(center=(320, 800))
